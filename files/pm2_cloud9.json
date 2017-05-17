@@ -1,0 +1,14 @@
+{
+      "apps" : [
+      {
+        "name"        : "c9editor",
+        "script"      : "server.js",
+        "args"        : ["--listen", "0.0.0.0",
+                         "--port", "3000",
+                         "-w", "/var/www",
+        ],
+        "log_date_format"  : "YYYY-MM-DD HH:mm Z",
+        "cwd": "/cloud9/"
+      }
+     ]
+}

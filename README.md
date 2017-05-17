@@ -1,4 +1,4 @@
-docker-lemp
+docker-lemp and cloud9 editor
 ===========
 
 [![Docker Stars](https://img.shields.io/docker/stars/stenote/docker-lemp.svg)](https://hub.docker.com/r/stenote/docker-lemp/)
@@ -11,10 +11,11 @@ Don't use it in product environment.
 
 # Usage
 
-    docker run -d --name=lemp \
+    docker run -d -it --name=lemp \
       -v /path/to/www/:/var/www/ \
       -v /path/to/mysql:/var/lib/mysql \
       -p port_of_nginx:80 \
+      -p port_of_cloud9:3000 \
       stenote/docker-lemp:latest
 
 # Detail
